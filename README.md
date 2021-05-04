@@ -34,5 +34,3 @@ For now it works perfectly fine, for all the districts in India.
 I have to work upon:
 1. Provide the list fo districts of the input state, to the user. if asked by the user.
 2. Get a UI for it and host it. (Need help on this!)
-
-Note: You can ask me the district id, if you do not know!
