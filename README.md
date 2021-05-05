@@ -7,15 +7,25 @@ It resolves few of the issues present with official website https://www.cowin.go
 
 # How to use it:
 
-To be updated soon. Work is in final phase!
+I will be soon hosting this. Soe work to do before that happens. Until then, the APIs can be used to fetch data. 
+
+# Steps to run it locally:
+TBA
 
 # Enhancements (TODO)
 
-#[NEW]
-To be updated soon
-
-#[OLD]
 For now it works perfectly fine, for all the districts in India. 
-I have to work upon:
-1. Provide the list fo districts of the input state, to the user. if asked by the user.
-2. Get a UI for it and host it. (Need help on this!)
+Backlog:
+
+1. Add a UI to this and host it
+2. Make date parameter optional
+3. Add exception handling
+4. Group the centres by date
+5. Provide the list fo districts of the input state, to the user. if asked by the user.
+
+# Work history:
+1. Work on a simple POC in python.
+2. Develop the POC to handle all the districts in the state of Uttar Pradesh in India and any other district using district_id
+3. Develop upon, making it work for all the districts of India (by district_name instead of district_id)
+4. Develop an API for this
+
