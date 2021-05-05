@@ -5,9 +5,9 @@ It resolves few of the issues present with official website https://www.cowin.go
 2. It also helps you filter out only those centres which have vaccine(s) available for your age. So, you do not go through a list of centres who have vaccine, but not for you.
 
 
-# How to use it:
+# How to access it?
 
-I will be soon hosting this. Soe work to do before that happens. Until then, the APIs can be used to fetch data. 
+I will be soon hosting this. Some work to do before that happens. Until then, the APIs can be used to fetch data. 
 
 # Steps to run it locally:
 TBA
