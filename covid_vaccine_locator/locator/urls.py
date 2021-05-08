@@ -3,5 +3,5 @@ from . import views
 
 app_name = 'locator'
 urlpatterns = [
-    path('', views.DetailViewset.as_view({'get': 'get_details'})),
+    path('', views.DetailViewset.as_view({'post': 'get_details'})),
 ]

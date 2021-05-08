@@ -5,7 +5,7 @@ from .util import get_centres
 
 class DetailViewset(viewsets.ModelViewSet):
     def get_details(self, request):
-        data = request.data
+        data = request.query_params
         try:
             date = data['date']
             age = int(data['age'])

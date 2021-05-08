@@ -1,8 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
 import requests
-import os
-import json
 
 
 def get_centres(date, age, state_name, district_name):
