@@ -15,6 +15,7 @@ def get_centres(date, age, state_name, district_name):
                 'district_id': district_id,
                 'date': date
             },
+            headers={"User-Agent": "Chrome"}
         )
         total_available_centres = 0
         centre_list = list()
@@ -49,9 +50,11 @@ def get_state_id(state_name):
                             "Jammu and Kashmir"]
         if state_name not in unchanged_states:
             state_name = state_name.title()
-
-        states = json.loads(os.popen("curl --silent https://cdn-api.co-vin.in/api/v2/admin/location/states").read())[
-            'states']
+        response = requests.get(
+            "https://cdn-api.co-vin.in/api/v2/admin/location/states",
+            headers={"User-Agent": "Chrome"}
+        )
+        states = response.json()['states']
         state_id = next(item for item in states if item["state_name"] == state_name)['state_id']
         return state_id
     except Exception:
@@ -62,7 +65,8 @@ def get_state_id(state_name):
 def get_district_id(state_id, district_name):
     try:
         district_url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/{0}".format(str(state_id))
-        districts = json.loads(os.popen("curl --silent {0}".format(district_url)).read())['districts']
+        response = requests.get(district_url, headers={"User-Agent": "Chrome"})
+        districts = response.json()['districts']
         district_id = next(item for item in districts if item["district_name"] == district_name.capitalize())[
             'district_id']
         return district_id
