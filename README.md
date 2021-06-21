@@ -1,4 +1,6 @@
 # PRD (Product Requirement Documentation) of the project: 
+https://github.com/7wick/covid-vaccine-locator-india/raw/main/PRD_%20%20covid%20vaccine%20locator.pdf
+
 
 # Features of covid-vaccine-locator-india:
 Helps in filtering out all the health care centres with availability of Covid-19  vaccines in India.
